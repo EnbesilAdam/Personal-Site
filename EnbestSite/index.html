@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enbest</title>
+  <link rel="icon" href="images/russiansnow.jpg" type="image/png">
+  
+  <!-- Modern Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="bg-overlay"></div>
+
+  <!-- Main Card -->
+  <main class="card-container">
+    
+    <!-- Profile Header -->
+    <section class="profile">
+      <div class="avatar-wrapper">
+        <img src="images/russiansnow.jpg" alt="Enbest Profile" class="avatar">
+        <span class="status-dot" title="Online"></span>
+      </div>
+
+      <h1 class="username">enbest</h1>
+      <p class="location"><i class="fa-solid fa-location-dot"></i> Istanbul, Turkey</p>
+
+      <!-- Roles & Badges -->
+      <div class="badges">
+        <span class="badge primary"><i class="fa-solid fa-gamepad"></i> Ren'Py Dev</span>
+        <span class="badge highlight"><i class="fa-solid fa-cube"></i> Roblox Dev</span>
+        <span class="badge secondary"><i class="fa-solid fa-code"></i> Plugin Dev</span>
+      </div>
+
+      <p class="project-title">
+        <i class="fa-solid fa-folder-open"></i> Project: <span class="highlight-text">My School Memories</span>
+      </p>
+
+      <!-- Social Links -->
+      <div class="icons">
+        <a href="https://steamcommunity.com/id/Enbesil/" target="_blank" aria-label="Steam">
+          <i class="fa-brands fa-steam"></i>
+        </a>
+        <a href="https://github.com/EnbesilAdam" target="_blank" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://open.spotify.com/user/fta4tfvcv31bcotdtgvsjxgi6?si=2474fb2056d745e7" target="_blank" aria-label="Spotify">
+          <i class="fa-brands fa-spotify"></i>
+        </a>
+        <a href="https://www.twitch.tv/yetimenbest" target="_blank" aria-label="Twitch">
+          <i class="fa-brands fa-twitch"></i>
+        </a>
+        <a href="iletisim.html" aria-label="Discord">
+          <i class="fa-brands fa-discord"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Music Player Card -->
+    <section class="player">
+      <div class="track-header">
+        <div class="track-info">
+          <i class="fa-solid fa-compact-disc disc-icon"></i>
+          <span id="title">Hide (CS01 Version)</span>
+        </div>
+        <div class="time-display"><span id="current">0:00</span> / <span id="duration">0:00</span></div>
+      </div>
+
+      <div class="visualizer" id="visualizer">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <div class="controls">
+        <input type="range" id="seekbar" value="0" min="0" step="1">
+        <button id="play" aria-label="Play/Pause"><i class="fa-solid fa-play"></i></button>
+      </div>
+    </section>
+
+  </main>
+
+  <audio id="audio" src="audio/Dorian Concept - 'Hide (CS01 Version)' (Official Video).mp3" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

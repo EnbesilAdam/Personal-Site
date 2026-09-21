@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enbest</title>
+  <link rel="icon" href="images/russiansnow.jpg" type="image/png">
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- CSS Style -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Arka plan overlay efekti -->
+  <div class="bg-overlay"></div>
+
+  <!-- Ana Kart Container -->
+  <main class="card-container">
+    
+    <!-- Profil Bölümü -->
+    <section class="profile">
+      <div class="avatar-wrapper">
+        <img src="images/russiansnow.jpg" alt="Enbest Profile" class="avatar">
+        <span class="status-dot" title="Online"></span>
+      </div>
+      <h1 class="glow-text">enbest</h1>
+      <p class="tagline">Ren'Py Game Developer | <span>My School Memories</span></p>
+      <p class="subline">Senior Developer on Roblox Studio • Modelling • Unturned Plugin Dev</p>
+      <div class="location"><i class="fa-solid fa-location-dot"></i> Turkey / Istanbul</div>
+
+      <!-- Sosyal Medya İkonları -->
+      <div class="icons">
+        <a href="https://steamcommunity.com/id/Enbesil/" target="_blank" aria-label="Steam">
+          <img src="icons/steam-logo-black-transparent.png" alt="Steam">
+        </a>
+        <a href="https://github.com/EnbesilAdam" target="_blank" aria-label="GitHub">
+          <img src="icons/github-icon-1-logo-png-transparent.png" alt="GitHub">
+        </a>
+        <a href="https://open.spotify.com/user/fta4tfvcv31bcotdtgvsjxgi6?si=2474fb2056d745e7" target="_blank" aria-label="Spotify">
+          <img src="icons/spotify-2-logo-png-transparent.png" alt="Spotify">
+        </a>
+        <a href="https://www.twitch.tv/yetimenbest" target="_blank" aria-label="Twitch">
+          <img src="icons/twitch-purple-logo-png-transparent.png" alt="Twitch">
+        </a>
+        <a href="iletisim.html" aria-label="Discord">
+          <img src="icons/discord-logo-png-transparent.png" alt="Discord">
+        </a>
+      </div>
+    </section>
+
+    <!-- Müzik Çalar Bölümü -->
+    <section class="player">
+      <div class="track-info">
+        <div class="title-wrapper">
+          <i class="fa-solid fa-compact-disc disc-icon"></i>
+          <span id="title">Hide (CS01 Version)</span>
+        </div>
+        <div class="time-display"><span id="current">0:00</span> / <span id="duration">0:00</span></div>
+      </div>
+
+      <!-- Ses Görselleştirici (Equalizer Bars) -->
+      <div class="visualizer" id="visualizer">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <div class="controls">
+        <input type="range" id="seekbar" value="0" min="0" step="1">
+        <button id="play" aria-label="Play/Pause"><i class="fa-solid fa-play"></i></button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Ses Dosyası -->
+  <audio id="audio" src="audio/Dorian Concept - 'Hide (CS01 Version)' (Official Video).mp3" loop></audio>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
