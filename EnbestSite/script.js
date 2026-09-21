@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // --- 1. Dinamik Title Efekti ---
   const fullText = "Enbest";
   let index = 0;
   let forward = true;
@@ -25,7 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   typeEffect();
 
-  // --- 2. Müzik Çalar Mantığı ---
   const audio = document.getElementById("audio");
   const playBtn = document.getElementById("play");
   const seekbar = document.getElementById("seekbar");
